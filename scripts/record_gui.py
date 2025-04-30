@@ -8,6 +8,7 @@ from PyQt5.QtWidgets import (
 )
 from PyQt5.QtGui import QIcon
 from PyQt5.QtCore import QSize, QTimer
+import datetime      
 
 class LoggerGUI(QWidget):
     def __init__(self):
@@ -32,7 +33,7 @@ class LoggerGUI(QWidget):
         # Filename entry
         file_layout = QHBoxLayout()
         self.file_edit = QLineEdit(self)
-        self.file_edit.setPlaceholderText("Enter filename.txt")
+        self.file_edit.setText("tocabi_log.csv")  
         file_layout.addWidget(QLabel("File:"))
         file_layout.addWidget(self.file_edit)
         layout.addLayout(file_layout)

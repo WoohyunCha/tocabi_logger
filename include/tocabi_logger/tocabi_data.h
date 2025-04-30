@@ -14,7 +14,7 @@ ros::Time start_time_;
 bool is_logging_ = false;
 
 SHMmsgs *shm_msgs_;
-std::string FILE_DIRECTORY = "/home/yong20/data/"; // Change this to your desired directory
+std::string FILE_DIRECTORY = "/home/cha/catkin_ws/src/tocabi_logger/data/"; // Change this to your desired directory
 std::string filename_ = "tocabi_log.csv";
 std::ofstream log_file_;
 
